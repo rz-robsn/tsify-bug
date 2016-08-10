@@ -4,15 +4,14 @@
   "version": "0.0.0",
   "description": "My cat&#39;s meow app",
   "license": "MIT",
-  "repository": "rz-robsn/random",
-  "author": {
-    "name": "",
-    "email": "",
-    "url": "github.com/rz-robsn"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rz-robsn/random.git"
   },
+  "author": " (github.com/rz-robsn)",
   "scripts": {
     "tsc": "tsc -p app/",
-    "tsify": "browserify app/renderer.tsx -p [ tsify -p app/ ] > /dev/null"
+    "tsify": "node browserify.js"
   },
   "keywords": [],
   "dependencies": {
@@ -24,7 +23,13 @@
   "devDependencies": {
     "browserify": "^13.1.0",
     "snabbdom-jsx": "^0.3.0",
+    "babelify": "^7.3.0",
     "tsify": "1.0.3",
     "typescript": "^2.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/rz-robsn/random/issues"
+  },
+  "homepage": "https://github.com/rz-robsn/random#readme",
+  "main": "main.js"
 }
