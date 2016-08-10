@@ -1,0 +1,30 @@
+{
+  "name": "random",
+  "productName": "random",
+  "version": "0.0.0",
+  "description": "My cat&#39;s meow app",
+  "license": "MIT",
+  "repository": "rz-robsn/random",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "github.com/rz-robsn"
+  },
+  "scripts": {
+    "tsc": "tsc -p app/",
+    "tsify": "browserify app/renderer.tsx -p [ tsify -p app/ ] > /dev/null"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@cycle/dom": "^12.0.0",
+    "@cycle/rxjs-run": "^3.0.2",
+    "rxjs": "^5.0.0-beta.10",
+    "xstream": "^5.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "snabbdom-jsx": "^0.3.0",
+    "tsify": "1.0.3",
+    "typescript": "^2.0.0"
+  }
+}
